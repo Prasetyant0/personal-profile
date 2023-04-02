@@ -6,9 +6,10 @@ require_once "../../../config/config.php";
 <div class="content-wrapper">
     <div class="container">
         <h1>Halaman Detail</h1>
+        <a href="blog.php" class="btn btn-success" style="position: absolute; top:120px; right:100px;">Keluar</a>
         <div class="contact-info">
             <?php
-            $id_blog = $_GET ['id_blog'];
+            $id_blog = $_GET['id_blog'];
             $sql = "SELECT * FROM blog WHERE id_blog = '$id_blog' ";
             $result = mysqli_query($conn, $sql);
             $data = mysqli_fetch_assoc($result);

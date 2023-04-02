@@ -8,7 +8,7 @@
         </div>
         <div class="row d-flex">
             <?php
-            $query = "SELECT * FROM blog";
+            $query = "SELECT * FROM blog LIMIT 3";
             $result = mysqli_query($conn, $query);
             foreach ($result as $data) :
             ?>
@@ -28,41 +28,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry justify-content-end">
-                    <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                    </a>
-                    <div class="text mt-3 float-right d-block">
-                        <div class="d-flex align-items-center mb-3 meta">
-                            <p class="mb-0">
-                                <span class="mr-2">July 03, 2020</span>
-                                <a href="#" class="mr-2">Admin</a>
-                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry">
-                    <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                    </a>
-                    <div class="text mt-3 float-right d-block">
-                        <div class="d-flex align-items-center mb-3 meta">
-                            <p class="mb-0">
-                                <span class="mr-2">July 03, 2020</span>
-                                <a href="#" class="mr-2">Admin</a>
-                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                            </p>
-                        </div>
-                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div> -->
+
             <?php endforeach  ?>
         </div>
+    </div>
+    <div class="seemore">
+        <a href="blog/seemore.php" class="btn btn-primary" style="position:relative; left:47%; top:50px;">See More&ensp;<i class="fa fa-arrow-right"></i></a>
     </div>
 </section>

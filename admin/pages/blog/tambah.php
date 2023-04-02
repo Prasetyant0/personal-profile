@@ -11,6 +11,10 @@ include "../../kepala.php";
                 <input type="text" name="blog" class="form-control" required autocomplete="off">
             </div>
             <div class="mb-3">
+                <label for="sub" class="form-label">Sub</label>
+                <input type="text" name="sub" class="form-control" autocomplete="off">
+            </div>
+            <div class="mb-3">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
                 <textarea name="deskripsi" id="biotext" class="form-control"></textarea>
             </div>
